@@ -4,13 +4,12 @@
 }
 
 .scoreboard {
-  width: 58%;
-  margin: 10rem auto;
+  width: 78%;
+  margin: 0 2rem 2rem 2rem;
   background-color: #0b5402;
   color: white;
   border-radius: 0.5rem;
-  margin-top: 10rem;
-  padding: 5rem;
+  padding: 5%;
   border: 4px solid #aaaaaa;
 }
 
@@ -30,9 +29,13 @@
   place-items: center;
   border: 3px solid white;
   border-radius: 0.5rem;
-  width: 15rem;
+  width: 30rem;
 }
-
+.resetButton {
+  display: flex;
+  width: 15rem;
+  justify-content: center;
+}
 .home {
   background-color: #656565;
 }
@@ -60,12 +63,12 @@
   text-align: center;
   background-color: var(--black);
   color: var(--red);
-  padding: 5%;
+  padding: 10% 5% 10% 5%;
 }
 
 .timer {
   font-family: "Ozone";
-  font-size: 9rem;
+  font-size: 5rem;
   padding: 2rem;
   text-align: center;
   background-color: var(--black);
@@ -77,7 +80,7 @@
   display: flex;
   justify-content: space-around;
   place-items: center;
-  height: 20rem;
+  height: 17.5rem;
 }
 
 .down,
@@ -107,16 +110,48 @@
 }
 
 .buttons {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #0b5402;
+  font-weight: bold;
 }
 
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.resetButton
+{
+  margin: 1rem;
+  border-radius: 4px;
+  position: relative;
+  left: 2.5rem;
+}
+.homeButtons__touchdown:hover,
+.homeButtons__fieldGoal:hover,
+.awayButtons__touchdown:hover,
+.awayButtons__fieldGoal:hover {
+  font-weight: bold;
+}
+.resetButton {
+  display: inline-block;
+  border: none;
+  padding: 1rem 1rem;
+  width: 80%;
+  text-decoration: none;
+  background: #414141;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   margin: 1rem;
   border-radius: 4px;
 }
